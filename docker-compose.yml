@@ -3,6 +3,17 @@ version: '3.4'
 services:
   warmupapitest:
     image: warmup-api-test/web
+    container_name: warmup-api-test-web
     build:
       context: .
       dockerfile: WarmupApiTest/Dockerfile
+
+  api-warmup:
+    image: warmup-api-test/warmup
+    container_name: warmup-api-test-warmup
+    build:
+      context: .
+      dockerfile: warmup/Dockerfile
+    depends_on:
+      - "warmupapitest"
+    command: ["./wait-for-it.sh", "-s", "--timeout=0", "warmupapitest:80", "--", "./warmup.sh"]
