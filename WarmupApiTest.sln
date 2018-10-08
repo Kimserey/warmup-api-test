@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarmupApiTest", "WarmupApiT
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{831EE383-007F-4B29-8CCA-81B6A7BDE357}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "warmup", "warmup", "{DFF35412-A7C1-4856-B929-2BF326791124}"
+	ProjectSection(SolutionItems) = preProject
+		warmup\Dockerfile = warmup\Dockerfile
+		warmup\wait-for-it.sh = warmup\wait-for-it.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
