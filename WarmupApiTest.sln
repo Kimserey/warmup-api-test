@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "warmup", "warmup", "{DFF354
 		warmup\warmup.sh = warmup\warmup.sh
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraApi", "ExtraApi\ExtraApi.csproj", "{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +30,10 @@ Global
 		{831EE383-007F-4B29-8CCA-81B6A7BDE357}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{831EE383-007F-4B29-8CCA-81B6A7BDE357}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{831EE383-007F-4B29-8CCA-81B6A7BDE357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

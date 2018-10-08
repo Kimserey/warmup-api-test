@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace WarmupApiTest
 {
@@ -7,8 +10,11 @@ namespace WarmupApiTest
     public class PersonsController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<string[]> GetAll()
+        public async Task<ActionResult<string[]>> GetAll([FromServices] IHttpClientFactory factory)
         {
+            var client = factory.CreateClient();
+            client.BaseAddress = new Uri("http://extraapi");
+            await client.GetAsync("/api/test");
             return new[] { "Kim", "Tom" };
         }
 
