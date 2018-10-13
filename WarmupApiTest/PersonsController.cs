@@ -13,7 +13,7 @@ namespace WarmupApiTest
         public async Task<ActionResult<string[]>> GetAll([FromServices] IHttpClientFactory factory)
         {
             var client = factory.CreateClient();
-            client.BaseAddress = new Uri("http://extraapi");
+            client.BaseAddress = new Uri("http://localhost:5100");
             await client.GetAsync("/api/test");
             return new[] { "Kim", "Tom" };
         }
