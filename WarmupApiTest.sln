@@ -10,9 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "warmup", "warmup", "{DFF35412-A7C1-4856-B929-2BF326791124}"
 	ProjectSection(SolutionItems) = preProject
 		warmup\Dockerfile = warmup\Dockerfile
-		warmup\wait-for-it.sh = warmup\wait-for-it.sh
-		warmup\wait-for.sh = warmup\wait-for.sh
-		warmup\wait.sh = warmup\wait.sh
 		warmup\warmup.sh = warmup\warmup.sh
 	EndProjectSection
 EndProject
