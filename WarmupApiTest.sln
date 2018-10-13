@@ -11,10 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "warmup", "warmup", "{DFF354
 	ProjectSection(SolutionItems) = preProject
 		warmup\Dockerfile = warmup\Dockerfile
 		warmup\wait-for-it.sh = warmup\wait-for-it.sh
+		warmup\wait-for.sh = warmup\wait-for.sh
+		warmup\wait.sh = warmup\wait.sh
 		warmup\warmup.sh = warmup\warmup.sh
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtraApi", "ExtraApi\ExtraApi.csproj", "{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtraApi", "ExtraApi\ExtraApi.csproj", "{109281F8-1AC0-443D-A0B8-1FD09EA7BBE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
